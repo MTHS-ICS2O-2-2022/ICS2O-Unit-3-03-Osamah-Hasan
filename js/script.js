@@ -1,9 +1,20 @@
 // Copyright (c) 2023 Osamah Hasan All rights reserved
 //
 // Created by: Osamah Hasan
-// Created on: Feb 2023
+// Created on: Mar 2023
 // This file contains the JS functions for index.html
 
-function myButtonClicked() {
-  alert("Answer will be supported soon")
+'use strict'
+/**
+ * This function calculates the volume of a pyramid
+ */
+function calculate () {
+  // input
+  const radius = parseInt(document.getElementById('Radius for the Sphere').value)
+
+  // process
+  const volume = 4/3 * Math.PI * radius ** 3
+
+  // output
+  document.getElementById('Volume').innerHTML = `the voulme is ${volume.toFixed(1)}`
 }
